@@ -1,9 +1,20 @@
+
 %h1
+  = link_to bank_accounts_path, class: "btn btn-default" do
+    Back to Bank Accounts
   %small{:id => "bank_account_holder_number"}
     Account Number: #{@bank_account.account_number}
   %small{:id => "bank_account_holder_name"}
     #{@bank_account.client}
+
 #modal
+= link_to edit_bank_account_path, class: "btn btn-info" do
+  Edit Bank Account
+
+= link_to bank_account_path(@bank_account.id), method: :delete,
+                                               class: "btn btn-danger",
+                                               data: { confirm: "Are you sure?" } do
+  Delete Bank Account
 
 #parameters{ data: { bank_account: @bank_account.to_json, account_transactions: @bank_account.account_transactions.to_json } }
 
