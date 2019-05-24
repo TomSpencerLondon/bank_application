@@ -1,0 +1,10 @@
+%h1
+  %small{:id => "bank_account_holder_number"}
+    Account Number: #{@bank_account.account_number}
+  %small{:id => "bank_account_holder_name"}
+    #{@bank_account.client}
+#modal
+
+#parameters{ data: { bank_account: @bank_account.to_json, account_transactions: @bank_account.account_transactions.to_json } }
+
+= javascript_pack_tag 'modal'
