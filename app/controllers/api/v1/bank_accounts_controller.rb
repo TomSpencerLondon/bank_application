@@ -1,6 +1,8 @@
 module Api
   module V1
     class BankAccountsController < ApplicationController
+      before_action :authenticate_user!
+
       def new_transaction
         if valid_transaction?
           new_balance

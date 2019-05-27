@@ -15,7 +15,9 @@
     - @bank_accounts.each.with_index do |bank_account, index|
       %tr
         %td{:id => "bank_account_id_#{index}"} #{bank_account.account_number}
-        %td{:id => "bank_account_client_#{index}"} #{ bank_account.client }
+        %td{:id => "bank_account_client_#{index}"}
+          = link_to client_path(bank_account.client.id) do
+            #{ bank_account.client }
         %td{:id => "bank_account_amount_#{index}"} #{number_to_currency(bank_account.balance, unit: "£")}
         %td
           = link_to bank_account_path(bank_account.id), class: "btn btn-primary" do

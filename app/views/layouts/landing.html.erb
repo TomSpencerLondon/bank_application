@@ -11,15 +11,8 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
-    <%= render "shared/header" %>
-
-    <div class="row">
-      <div class="col-md-3">
-        <%= render "shared/sidebar" %>
-      </div>
-      <div class="col-md-9">
-        <%= yield %>
-    </div>
+      <%= render "shared/login/navbar" %>
+      <%= render "shared/login/header" %>
+    <%= yield %>
   </body>
 </html>

@@ -1,17 +1,19 @@
-%h1
-  My Bank
-
-.row
-  .col-md-12
-    %h2#number_of_accounts
-      Number of accounts: #{number_of_accounts}
-    %h2#number_of_clients
-      Number of clients: #{number_of_clients}
-
-.row
-  .col-md-12
-    = link_to bank_accounts_path do
-      Bank Accounts
-    %hr
-    = link_to new_bank_account_path do
-      New Bank Account
+.panel.panel-default
+  .panel-heading.main-color-bg
+    %h3.panel-title
+      Website Overview
+  .panel-body
+    .col-md-6
+      .well.dash-box
+        %h2#number_of_accounts
+          %span.glyphicon.glyphicon-pencil
+          #{number_of_accounts}
+        %h4
+          Accounts
+    .col-md-6
+      .well.dash-box
+        %h2#number_of_accounts
+          %span.glyphicon.glyphicon-user
+          #{number_of_clients}
+        %h4
+          Clients

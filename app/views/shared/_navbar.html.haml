@@ -1,0 +1,26 @@
+%nav.navbar.navbar-default{id: "navbar"}
+  .container
+    .navbar-header
+      %a.navbar-brand{href: root_path}
+        Bank
+    .collapse.navbar-collapse{id: "navbar"}
+      %ul.nav.navbar-nav
+        %li.active
+          = link_to clients_path do
+            Clients
+        %li
+          = link_to new_client_path do
+            New Client
+        %li
+          = link_to bank_accounts_path do
+            Bank Accounts
+        %li
+          = link_to new_bank_account_path do
+            New Bank Account
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{href:"#"}
+            Welcome, #{current_user.username}
+        %li
+          = link_to destroy_user_session_path, method: :delete do
+            Logout
