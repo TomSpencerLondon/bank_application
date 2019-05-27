@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.3.6'
+ruby '2.4.6'
 
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
