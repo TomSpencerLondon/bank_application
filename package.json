@@ -2,9 +2,7 @@
   "scripts": {
     "test": "jest",
     "test:debug": "node --inspect node_modules/.bin/jest --runInBand",
-    "test-watch": "jest --watch",
-    "webpack:deploy": "webpack --config=webpack/webpack.config.js -p",
-    "heroku-postbuild": "npm run webpack:deploy"
+    "test-watch": "jest --watch"
   },
   "jest": {
     "roots": [
