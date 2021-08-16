@@ -1,7 +1,7 @@
 # Bank Application
 This is a practice CRUD Bank application.
 
-It includes CRUD actions:
+It includes the following CRUD actions:
 
 ![Screenshot 2021-08-16 at 23 45 08](https://user-images.githubusercontent.com/27693622/129638534-0191b88e-a159-42a5-88ee-2277607a376b.png)
 
