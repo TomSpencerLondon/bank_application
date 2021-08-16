@@ -1,25 +1,10 @@
-# README
+# Bank Application
+This is a practice CRUD Bank application.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It includes CRUD actions:
 
-Things you may want to cover:
+![Screenshot 2021-08-16 at 23 45 08](https://user-images.githubusercontent.com/27693622/129638534-0191b88e-a159-42a5-88ee-2277607a376b.png)
 
-* Ruby version
+![Screenshot 2021-08-16 at 23 45 20](https://user-images.githubusercontent.com/27693622/129638536-5ebabaed-6bcb-497b-a5c7-0a89df3155c9.png)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# bank_application
+![Screenshot 2021-08-16 at 23 45 35](https://user-images.githubusercontent.com/27693622/129638537-2604db04-c56e-475e-8abc-1f519fd872b2.png)
